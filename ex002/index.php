@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados do Servidor</title>
+    <title>Exemplo de PHP</title>
 </head>
 <body>
-<h1>Dados do Servidor</h1>
-<?php
-    $nome = "Cesar Augusto";
-    echo "<p>O meu nome é $nome</p>";
-?>
-
+    <?php 
+        date_default_timezone_set("America/Sao_Paulo");
+        echo "Hoje é dia " . date("d/M/Y");
+        echo " e a hora atual é " . date("G:i:s");
+    ?>
 </body>
 </html>
